@@ -1,10 +1,12 @@
 package day02;
+import java.util.*;
 
 public class Ex02 {
 	public Ex02() {
 		ex01();
 		ex02();
 		ex03();
+		ex04();
 	}
 	
 
@@ -14,6 +16,7 @@ public class Ex02 {
 	 	예]
 	 		456 --> 400
 */
+	//랜덤하게 만든 후 처리하는 방법
 	public void ex01() {
 		int num = (int)(Math.random()* (999- 100 +1)) + 100;
 		
@@ -21,6 +24,7 @@ public class Ex02 {
 		
 		System.out.println("3자리 값은 : " + num +" "+"버린숫자는? :"+ result);
 	}
+	
 	
 /*
  	문제 2]
@@ -66,7 +70,10 @@ public class Ex02 {
 	 	 
 */
 	public void ex04{
-		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("실수를 입력하세요 :");
+		float num = sc.nextFloat();
+
 	}
 	
 /*

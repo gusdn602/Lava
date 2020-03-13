@@ -21,40 +21,38 @@ public class Ex03 {
 	}
 	
 	public void ex03() {
+		int home = 1;
+		
+		int fec = 2;
+		
+		int edu = 3;
+		
+		int store = 4;
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("코드를 입력하시오");
 		int code = sc.nextInt();
+		if (!(code >= 1 && code <= 4)) {
+			System.out.println("존재하지 않는 코드입니다.");
+			return;
+		}
 		System.out.println("사용량를 입력하시오");
 		int  can = sc.nextInt();
+		if (!(code >= 1 && code <= 4)) {
+			System.out.println("존재하지 않는 코드입니다.");
+			return;
+		}
+			
+	
 		
-		int home = 1;
-		int home1 = 3800;
-		int home2 = 245;
-		
-		int fec = 2;
-		int fec1 = 2400;
-		int fec2 = 157;
-		
-		int edu = 3;
-		int edu1 = 2900;
-		int edu2 = 169;
-		
-		int store = 4;
-		int store1 = 3200;
-		int store2 = 174;
-	
-	
-	
-	
-	
 		if(code == 1) {
-			System.out.println("이번달 전기요금은 " + (home1 + can * home2) + " 입니다.");
+			System.out.println("이번달 전기요금은 " + (3800 + can * 245) + " 입니다.");
 		} else if(code == 2 ){
-		 	System.out.println("이번달 전기요금은 " + (fec1 + can * fec2) + " 입니다.");
+		 	System.out.println("이번달 전기요금은 " + (2400 + can * 157) + " 입니다.");
 		} else if(code == 3){
-			System.out.println("이번달 전기요금은" + (edu1 + can * edu2) + "입니다.");	
+			System.out.println("이번달 전기요금은" + (2900 + can * 169) + "입니다.");	
 		} else if(code == 4){
-			 System.out.println("이번달 전기요금은" + (store1 + can *store2) + "입니다.");
+			 System.out.println("이번달 전기요금은" + (3200 + can *174) + "입니다.");
 		} 
 	}
 

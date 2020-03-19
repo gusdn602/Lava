@@ -7,13 +7,13 @@ package day09;
 	실행해서 출력하세요.
  */
 public class Ex01 {
+	int ban = (int)(Math.random() * (100 - 1 +1)+1);
 	public Ex01() {
-	
+		
 	}
-	public int Ex001(int i) {
-		int start = 
-		int ban = (int)(Math.random() * (end - start + 1) + start);
-		return result;
+	
+	public void start(int a) {
+		
 	}
 	public static void main(String[] args) {
 		new Ex01();

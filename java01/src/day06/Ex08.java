@@ -17,7 +17,7 @@ public class Ex08 {
 		String email[] = {"gusdn601@naver.com", "mung12@naver.com", "kihoon13@naver.com", "2sll@naver.com", "dong77@naver.com"};
 		JOptionPane.showInputDialog("이름을 입력하세요");
 		for(int i = 0; i<name.length; i++) {
-			if(name[0] ) {
+			if(name[0] == "") {
 				
 			}
 		}

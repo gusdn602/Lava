@@ -49,5 +49,6 @@ public class Test01 {
 		// 5. 결과 출력하기
 			System.out.print("입력한 해 [" + year + "]는 ["+ hea + "]입니다.");
 	}
+}
 
 

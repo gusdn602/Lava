@@ -7,7 +7,7 @@ public class Work01 {
 		char[][] ch = new char[5][5];
 		for(int i = 0 ; i < 5; i++ ) {
 			for(int j = 0 ; j < ch[i].length ; j++ ) {
-				ch[i][j] = (char)('A' + j + 5 *  i);
+				ch[i][j] = (char)('Y' - j  - 5 * i);
 			}
 		}
 		

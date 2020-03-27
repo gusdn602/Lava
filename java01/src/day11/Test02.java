@@ -22,6 +22,6 @@ public class Test02 {
 	}
 	
 	public static int getTen() {
-		return result;
+		return 10;
 	}
 }

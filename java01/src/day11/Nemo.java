@@ -1,7 +1,7 @@
 package day11;
 
 public class Nemo extends Dohyung{
-	int width, height;
+	int width, height, area1;
 	public Nemo() {
 		
 	}
@@ -13,6 +13,6 @@ public class Nemo extends Dohyung{
 	
 	//면적 구해주는 함수
 	public void setArea() {
-		area1 = width * heght;
+		area1 = width * height;
 	}
 }

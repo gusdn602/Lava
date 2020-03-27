@@ -7,56 +7,44 @@ package day09;
  	변수를 출력하는 프로그램을 작성하세요.
  */
 public class Test02 {
-	
 	public Test02() {
-		//함수의 반환값을 변수에 담아서 
-		int gap1 = plus(3, 7);
-		int gap2 = minus(6,7);
-		int gap3 = namuji(7,7);
-		int gap4 = gop(1000,2000);
-		int gap5 = nabugi(1,1);
+		int gap = plus(3,7);
+		int gap2 = minus(5,6);
+		int gap3 = gop(100,100);
+		int gap4 = manu(150,100);
 		
-		//출력한다.
-		System.out.println("plus(3, 7 ):" + gap1);
-		System.out.println("minus(6,7 ):" + gap2);
-		System.out.println("namuji(7,7 ):" + gap3);
-		System.out.println("gop(1000,2000 ):" + gap4);
-		System.out.println("nabugi(1,1):" + gap5);
-		
+		System.out.println(gap);
+		System.out.println(gap2);
+		System.out.println(gap3);
+		System.out.println(gap4);
 	}
-	//더하기 연산
 	public int plus(int no1, int no2) {
-		int sum = no1 + no2;
-		return sum;
+	int sum = no1 + no2;
+	return sum;
 	}
 	
-	//빼기 연산
 	public int minus(int no1, int no2) {
-		int resutlt = no1 - no2;
-		return resutlt;
+		int minus = no1 - no2;
+		return minus;
 	}
 	
-	//나머지 연산
-	public int namuji(int no1, int no2) {
-		int result = no1 % no2;
-		return result;
-	}
-	
-	//곱하기 연산
 	public int gop(int no1, int no2) {
-		int result = no1 * no2;
-		return result;
+		int gop = no1 * no2;
+		return gop;
 	}
 	
-	//나누기 연산
-	public int nabugi(int no1, int no2) {
-		int result = no1 / no2;
-		return result;
+	public int manu(int no1, int no2) {
+		int nanugi = no1/no2;
+		return nanugi;
 	}
+	
+	
 	
 	public static void main(String[] args) {
 		new Test02();
+}
 
 	}
 
-}
+
+

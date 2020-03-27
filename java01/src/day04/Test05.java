@@ -18,7 +18,7 @@ package day04;
  			순서 : 1 -> 2 -> 3 -> 2 -> 3 ->... 조건식이 true인 경우에만
  					-> (4)
  					
- 		
+ */	
 public class Test05 {
 	
 	/*
@@ -31,7 +31,7 @@ public class Test05 {
 		while(dan < 10) {
 			System.out.println("----------------");
 			
-			int gop = 1;
+			gop = 1;
 			while(gop < 10) {
 				System.out.println(dan + "x" + gop + "=" + (dan * gop));
 				gop ++;

@@ -69,7 +69,7 @@ public class Ex02 {
 	 	다시 / 100 해주면 원 소수점 형태로 변환될 것이고...
 	 	 
 */
-	public void ex04{
+	public void ex04(){
 		Scanner sc = new Scanner(System.in);
 		System.out.println("실수를 입력하세요 :");
 		float num = sc.nextFloat();

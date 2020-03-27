@@ -26,7 +26,8 @@ public class Sovl10 {
 			for(int j = 0; j <=i; j++) no += j;
 			
 			//각 행의 각셀의 숫자 출력하기
-			for(int j = 0; j <=i; j++) no += j;{
+			for(int j = 0; j <=i; j++) {
+				no += j;
 				System.out.printf("%3d", no + j);
 			}
 			System.out.println();

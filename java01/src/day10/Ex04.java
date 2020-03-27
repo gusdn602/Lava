@@ -15,7 +15,7 @@ public class Ex04 {
 		
 	}
 	public int stud(int...st) {
-		
+		return 0;
 	}
 	public int score(int...sc) {
 		int sco = (int)(Math.random() *(100 - 1+1)+1);

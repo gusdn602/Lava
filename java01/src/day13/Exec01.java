@@ -41,7 +41,8 @@ public class Exec01 {
 			int[] arr = (int[]) list2.get(i);
 			System.out.println(t.calcArrea(arr));
 		}
-		
+		System.out.println("#####################");
+		abc();
 	}
 	
 	//부연설명
@@ -61,8 +62,8 @@ public class Exec01 {
 		list2.add(new int[]{15});
 		//면적 출력하기
 		System.out.println(t.calcArrea(10, 5));
-		System.out.println(t1.calcArrea(5, 20));
-		System.out.println(t2.calcArrea(15));
+		System.out.println(t1.calcArrea(15));
+		System.out.println(t2.calcArrea(15,20));
 		
 		ArrayList  list = new ArrayList();
 		list.add(t);
@@ -77,8 +78,8 @@ public class Exec01 {
 		
 		// 따라서 원칙은 아래형태처럼 사용해야 되지만
 		Class01 c1 = (Class01)list.get(0);
-		Class02 c2 = (Class02)list.get(1);
-		Class04 c3 = (Class04)list.get(2);
+		Class02 c2 = (Class02)list.get(2);
+		Class04 c3 = (Class04)list.get(1);
 		
 		//그런데 이것을 반복문처럼 반복해서 사용해야 되는 경우라면
 		// 위의 처리방식은 적합하지 않다.

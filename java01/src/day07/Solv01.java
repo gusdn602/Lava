@@ -23,7 +23,7 @@ public class Solv01 {
 		System.out.println("문자열 :" + str + "\nch :" + 
 		Arrays.toString(ch)+ "/nch1" + Arrays.toString(ch1));
 		
-		JOptionPane.showMessageDialog(null, msg);
+		JOptionPane.showMessageDialog(null, "현우씨 쵝오!!!");
 	}
 
 }

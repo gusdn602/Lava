@@ -33,8 +33,8 @@ public class Spesal {
 		String tmp3 = "0";
 		int idx = 0;
 			idx = sp.indexOf(",");
-			//tmp3 = sp.substring(0,idx);
-			//tmp3 = sp.substring(idx+2);
+			//tmp3 = sp.substring(idx,idx+sp.indexOf("create"));
+			//tmp3 = sp.substring(idx+9);
 			//tmp3 = sp.substring(sp.indexOf("c")+ sp.indexOf(idx));
 			//tmp3 = sp.substring((idx+2)+(idx+1),(idx+2)+(idx+1)+14);
 			//tmp3 = sp.substring((idx+2)+(idx+1)+16,((idx+2)+(idx+1)+16)+14);
@@ -53,12 +53,8 @@ public class Spesal {
 			tmp555 = sp.indexOf(".");
 			tmp5555 = tmp55+tmp555;
 			String[] plan = new String[tmp5555];
-			for(int i =0; i<plan.length; i++) {
-				if(plan[i].equals(sp.indexOf("you¡¯ll"+1))) {
-					plan[i] = sp.substring(idx+2);
-				}
+			
 				
 			}
-			System.out.print(Arrays.toString(plan));
+			
 	}
-}

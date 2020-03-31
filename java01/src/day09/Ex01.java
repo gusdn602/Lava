@@ -6,15 +6,30 @@ package day09;
 	원의 둘레를 구해주는 함수를 제작하고 
 	실행해서 출력하세요.
  */
+import java.util.*;
+import javax.swing.*;
+
 public class Ex01 {
 	int ban = (int)(Math.random() * (100 - 1 +1)+1);
+	
 	public Ex01() {
-		
+		dool();
+		nall();
+		print();
 	}
 	
-	public void start(int a) {
-		
+	public double dool() {
+		return 2*3.14*ban; 
 	}
+	
+	public double nall() {
+		return 	3.14 * ban * ban; 
+	}
+	
+	public void print() {
+		System.out.println("반지름 :" + ban + "\n원의 넓이는 : " + nall() + "\n원의 둘레는" + dool());
+	}
+	
 	public static void main(String[] args) {
 		new Ex01();
 

@@ -68,9 +68,11 @@ public class Specl02 {
 		System.out.println("자른배열 : " + Arrays.deepToString(arr));
 		System.out.println(arr.length);
 	for(int i = 0; i<tmp.length(); i++) {
-		if(arr[i]) {
-			
-		}
+			/*
+			 * if(arr[i]) {
+			 * 
+			 * }
+			 */
 	}
 		
 		

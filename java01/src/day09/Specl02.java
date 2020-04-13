@@ -64,18 +64,17 @@ public class Specl02 {
 		
 		arr[cnt] = tmp;
 		
-	System.out.println(tmpp);
-		System.out.println("자른배열 : " + Arrays.deepToString(arr));
-		System.out.println(arr.length);
-	for(int i = 0; i<tmp.length(); i++) {
-			/*
-			 * if(arr[i]) {
-			 * 
-			 * }
-			 */
-	}
-		
-		
+		System.out.println(tmpp);
+			System.out.println("자른배열 : " + Arrays.deepToString(arr));
+			System.out.println(arr.length);
+		for(int i = 0; i<tmp.length(); i++) {
+				/*
+				 * if(arr[i]) {
+				 * 
+				 * }
+				 */
+		}
+	
 		for(String msg : arr) {
 			
 			System.out.println(msg);

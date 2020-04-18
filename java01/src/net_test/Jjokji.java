@@ -11,7 +11,7 @@ public class Jjokji {
 	// 주소를 알려주면 이름을 찾아내는 맵
 	Properties nameToIp, ipToName;
 	JList list;
-	JButton senB;
+	JButton sendB;
 	JFrame frame;
 	
 	DatagramSocket sSoket, rSoket;
@@ -23,7 +23,82 @@ public class Jjokji {
 	 */
 	public Jjokji() {
 		setMap();
-		System.out.println("전은석 IP :" + nameToIp.get("전은석"));
+		//창부터 만들고
+		frame = new JFrame("쪽지 프로그램");
+		frame.addWindowListener(new WindowAdapter(){
+			public void windowClosing(WindowEvent e) {
+				close();
+			}
+		});
+		
+		Set tmp = nameToIp.keySet();
+		Vector v = new Vector(tmp);
+		list = new JList(v);
+		JScrollPane sp = new JScrollPane(list);
+		sendB = new JButton("쪽지쓰기");
+		
+		//이벤트 추가하고
+		sendB.addActionListener(new ButtonEvent());
+		frame.add("Center",sp);
+		frame.add("South",sendB);
+		
+		
+		
+		frame.setSize(200, 300);
+		frame.setVisible(true);
+		
+		/* -------------------폼 만드는 코드----------------------------------*/
+		/* -------------------네트워크 구성 시작----------------------------------*/
+		//UDP 통신 이므로 DatagramSocket 을 이용한다.
+		
+		try {
+			sSoket = new DatagramSocket();
+			rSoket = new DatagramSocket(9999);
+			//네트워크 회선에만 접속을 한 상태가 된다.
+			//즉, 네트워크가 가능하도록만 해준 상태..
+			
+			//이제 네트워크가 구성이 완료되었으므로
+			//쪽지를 보내고 받을 수 있다.
+			//쪽지가 오는것은 언제 올지 모르므로 받는 프로그램을 시작해준다.
+			ReceiveTread t = new ReceiveTread(this);
+			t.start();
+		}catch(Exception e) {
+			//이 프로그램은 통신을 하려면 반드시 소켓이 필요하고 
+			//소켓을 만드는 과정에서 에러가 발생하면 더이상 이 프로그램은 
+			//실행시키는 의미가 없어진다.
+			//따라서 프로그램을 종료해준다.
+			close();
+		}
+	}
+	class ButtonEvent implements ActionListener{
+		
+		public void actionPerformed(ActionEvent e) {
+			String name = (String) list.getSelectedValue();
+			if(name == null || name.length() ==0) {
+				return;
+			}
+			//보내기 위한 대화상자를 new 시킨다.
+			SendDlg dlg = new SendDlg(Jjokji.this);
+			//테스트 필드에 받는 사람의 이름을 써주고 
+			dlg.field.setText(name);
+			//화면에 보이게 하고
+			dlg.frame.setVisible(true);
+		}
+	}
+	// 소켓 닫아주는 함수
+	public void close() {
+		/*
+		try {
+			sSoket.close();
+			rSoket.close();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		*/
+		System.exit(0);
+	}
+	public void toTest() {
+		System.out.println("전은석 IP :" + nameToIp.get("전은석"));		
 	}
 	public void setMap() {
 		nameToIp = new Properties();

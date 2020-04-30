@@ -22,7 +22,7 @@ public class ORCLJDBC {
 		}
 	}
 	public Connection getCon() {
-		return getCon("hello", "hello");
+		return getCon("Scott", "tiger");
 	}
 	
 	//커넥션 얻어오는 함수

@@ -20,12 +20,12 @@ add(
 		//회원 데이터는 VO에 담아서 넘겨주기로 약속했으므로 VO를 준비한다.
 		
 		Member mVO = new Member();
-		mVO.setOriname("서동혁");
-		mVO.setId("sdh");
-		mVO.setPw("12345");
-		mVO.setMail("sdh@incre");
+		mVO.setOriname("우현우");
+		mVO.setId("whw");
+		mVO.setPw("12346");
+		mVO.setMail("whw@incre");
 		mVO.setGen("M");
-		mVO.setTel("010-9823-5579");
+		mVO.setTel("010-4721-6527");
 		mVO.setAno(11);
 		
 		//데이터는 준비 되었으니
